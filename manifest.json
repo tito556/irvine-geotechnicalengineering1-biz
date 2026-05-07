@@ -11,5 +11,10 @@
       "sizes": "any",
       "type": "image/svg+xml"
     }
-  ]
+  ],
+  "lang": "en",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "description": "Professional geotechnical services in Irvine, USA. Soil studies, testing and technical consulting.",
+  "id": "/irvine-2735"
 }
