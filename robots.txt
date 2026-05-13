@@ -34,6 +34,6 @@ User-agent: SemrushBot
 Disallow: /
 
 User-agent: AhrefsBot
-Crawl-delay: 10
+Crawl-delay: 8
 
 Sitemap: https://irvine.geotechnicalengineering1.biz/sitemap.xml
