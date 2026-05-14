@@ -116,6 +116,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#800020) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <header class="header">
@@ -144,7 +180,7 @@ header.hero, .hero { position: relative !important; }
 
         <h2>Approach and scope</h2><div>In Irvine, our most common remediation equipment includes direct-push rigs for soil sampling, air sparge points for volatile organics, and temporary monitoring wells for groundwater extraction. We also mobilize thermal desorption units for sites with high concentrations of petroleum hydrocarbons. A typical field program looks like this:<br><ul><li>Phase II ESA with 6 to 12 soil borings per acre, logged on site by a registered geologist.</li><li>Collection of discrete soil samples in EnCore samplers for VOC analysis, plus bulk samples for metals and SVOCs.</li><li>Installation of 2-inch PVC monitoring wells with 10-slot screen, developed by surge block and bailed.</li><li>Laboratory analysis under EPA Method 8260 (VOCs), 8270 (SVOCs), and 6010 (metals) at an ISO 17025 accredited lab.</li></ul>We follow the California Environmental Quality Act (CEQA) guidelines and coordinate with the Santa Ana Regional Water Quality Control Board when groundwater is impacted. Each remediation strategy is adapted to the specific contaminant, depth, and soil type—clayey silts behave very differently than the clean sands found near the 405 corridor.</div>
         <figure style="margin:1.5rem auto;max-width:60%;border-radius:6px;overflow:hidden;border:1px solid #E5E5E5"></figure>
-        <h2>Site-specific factors</h2><p>Irvine sits on the eastern edge of the Los Angeles Basin, where the subsurface is dominated by Quaternary alluvial deposits—primarily silty sands and clayey silts with occasional gravel lenses. The water table is shallow, and the area is in Seismic Zone 4 per ASCE 7. These conditions create two main risks for contaminated soil remediation: first, shallow groundwater can spread dissolved-phase plumes quickly if not intercepted early; second, the clay layers can act as semi-confining beds, allowing vapor intrusion into overlying buildings. We have seen cases where a small diesel spill in a dry cleaner's back room, left unaddressed for a few years, migrated laterally over 150 feet within the sand layer. The combination of high seismic shaking and loose granular soils can also remobilize contaminated groundwater during an earthquake. That is why we always include a groundwater monitoring plan and a vapor intrusion assessment in our remediation designs for Irvine properties.</p>
+        <h2>Site-specific factors</h2><p>Irvine sits on the eastern edge of the Los Angeles Basin, where the subsurface is dominated by Quaternary alluvial deposits—primarily silty sands and clayey silts with occasional gravel lenses. The water table is shallow, and the area is in <a href="/seismic/">Seismic</a> Zone 4 per ASCE 7. These conditions create two main risks for contaminated soil remediation: first, shallow groundwater can spread dissolved-phase plumes quickly if not intercepted early; second, the clay layers can act as semi-confining beds, allowing vapor intrusion into overlying buildings. We have seen cases where a small diesel spill in a dry cleaner's back room, left unaddressed for a few years, migrated laterally over 150 feet within the sand layer. The combination of high seismic shaking and loose granular soils can also remobilize contaminated groundwater during an earthquake. That is why we always include a groundwater monitoring plan and a vapor intrusion assessment in our remediation designs for Irvine properties.</p>
 
         
     <section class="block mid-cta-c507-c507" style="padding:2rem 0">

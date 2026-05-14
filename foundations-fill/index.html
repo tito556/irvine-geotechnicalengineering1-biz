@@ -116,6 +116,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#800020) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <header class="header">
@@ -183,7 +219,7 @@ header.hero, .hero { position: relative !important; }
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
 <div style="max-width:700px;margin:1.5rem auto;border-left:4px solid #404040;border-radius:6px;overflow:hidden;background:#FFF;box-shadow:0 1px 3px rgba(0,0,0,.05)"><table style="width:100%;border-collapse:collapse;font-size:.92rem"><thead><tr style="background:#404040;color:#FFF"><th style="padding:.75rem 1rem;text-align:left;font-weight:600">Parameter</th><th style="padding:.75rem 1rem;text-align:left;font-weight:600">Typical value</th></tr></thead><tbody><tr style="background:#FAFAF7"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Fill thickness range</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">2 ft – 25 ft (typical in Irvine)</td></tr><tr style="background:#FFFFFF"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">SPT N-value (fill)</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">8–30 blows/ft depending on compaction</td></tr><tr style="background:#FAFAF7"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Compaction target (ASTM D698)</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">90%–95% relative compaction</td></tr><tr style="background:#FFFFFF"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Collapse potential (wetting)</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">0.5%–2% strain if poorly compacted</td></tr><tr style="background:#FAFAF7"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Allowable bearing capacity</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">1,500–4,000 psf per IBC Table 1806.2</td></tr><tr style="background:#FFFFFF"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Groundwater depth</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">10–40 ft (varies by zone)</td></tr></tbody></table></div>
 
-        <h2>Top questions</h2><details class="faq"><summary>How deep are typical fills in Irvine residential lots?</summary><p>Fills in Irvine residential areas range from 3 to 15 feet deep. Older subdivisions near the I-5 corridor often have fills from 8 to 12 feet, while newer developments near the Great Park may reach 20 feet. We verify depth with CPT or test pits.</p></details><details class="faq"><summary>What is the cost of a foundations on fill analysis in Irvine?</summary><p>For a standard single-family lot, our analysis ranges between US$950 and US$2,500. This includes field testing, lab work, and a report with bearing capacity and settlement recommendations. Larger commercial sites are quoted separately.</p></details><details class="faq"><summary>Can I build directly on undocumented fill?</summary><p>Not without evaluation. Undocumented fill often has variable compaction, hidden organic layers, or collapse potential. We recommend at least SPT borings and a consolidation test. If the fill is too weak, deep foundations or Improvement may be required.</p></details><details class="faq"><summary>What settlement is acceptable for shallow foundations on fill?</summary><p>Per IBC, total settlement under 1 inch and differential settlement under 3/4 inch are typical targets. For fills in Irvine, we often see 1 to 2 inches over 10 years if compaction is adequate. Higher values require mitigation.</p></details>
+        <h2>Top questions</h2><details class="faq"><summary>How deep are typical fills in Irvine residential lots?</summary><p>Fills in Irvine residential areas range from 3 to 15 feet deep. Older subdivisions near the I-5 corridor often have fills from 8 to 12 feet, while newer developments near the Great Park may reach 20 feet. We verify depth with CPT or test pits.</p></details><details class="faq"><summary>What is the cost of a foundations on fill analysis in Irvine?</summary><p>For a standard single-family lot, our analysis ranges between US$950 and US$2,500. This includes field testing, lab work, and a report with bearing capacity and settlement recommendations. Larger commercial sites are quoted separately.</p></details><details class="faq"><summary>Can I build directly on undocumented fill?</summary><p>Not without evaluation. Undocumented fill often has variable compaction, hidden organic layers, or collapse potential. We recommend at least SPT borings and a consolidation test. If the fill is too weak, deep <a href="/foundations/">foundations</a> or Improvement may be required.</p></details><details class="faq"><summary>What settlement is acceptable for shallow foundations on fill?</summary><p>Per IBC, total settlement under 1 inch and differential settlement under 3/4 inch are typical targets. For fills in Irvine, we often see 1 to 2 inches over 10 years if compaction is adequate. Higher values require mitigation.</p></details>
     
     <section class="block map-block" style="padding:3rem 1.5rem">
       <div style="max-width:1200px;margin:0 auto">
